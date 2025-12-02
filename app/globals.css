@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  /* 1. Restore your custom colors */
+  --color-secondary: #f5741c;
+  --color-darkBg: #131424;
+
+  /* 2. Restore your custom gradient */
+  /* This creates the class: bg-gradient-cover */
+  --background-image-gradient-cover: linear-gradient(90.21deg,
+      rgba(170, 54, 124, 0.5) -5.91%,
+      rgba(74, 47, 189, 0.5) 111.58%);
+}
+
+/* 3. Apply the dark background globally */
+body {
+  background-color: var(--color-darkBg);
+  color: white;
+  /* Ensures text is readable on the dark background */
+}
